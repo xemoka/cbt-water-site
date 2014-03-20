@@ -6,6 +6,7 @@
     </ul>
   </nav>
 </header>
+
 <div class="map">
   Map Area
   <div class="legend" ng-controller="LegendCtrl">
@@ -17,11 +18,13 @@
     </ul>
   </div>
 </div>
+
 <div class="info" ng-controller="InfoCtrl">
   <h3>Info Box</h3>
-  {{layerInfo}}
+  {{selected.layerInfo}}
 </div>
+
 <footer>
-  <span class='left'>with support from the Columbia Basin Trust</span>
-  <span class='right'>SGRC 2014</span>
+  <span class='left'>SGRC 2014</span>
+  <span class='right'>with support from the Columbia Basin Trust</span>
 </footer>

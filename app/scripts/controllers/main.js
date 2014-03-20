@@ -1,8 +1,6 @@
-define(['angular'], function (angular) {
+define(['angular'], function(angular) {
   'use strict';
 
   angular.module('cbtWaterSiteApp.controllers.MainCtrl', [])
-    .controller('MainCtrl', function ($scope) {
-      
-    });
+    .controller('MainCtrl', function($scope) {});
 });
