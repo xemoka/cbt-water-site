@@ -8,7 +8,7 @@
     "es5-shim": "~2.1.0",
     "jquery": "~1.11.0",
     "leaflet-dist": "0.7.2",
-    "esri-leaflet": "0.1-beta.4-patch-1",
+    "esri-leaflet": "0.0.1-beta.4-patch-1",
     "sass-bootstrap": "~3.0.2",
     "angular-resource": "1.2.11",
     "angular-sanitize": "1.2.11",

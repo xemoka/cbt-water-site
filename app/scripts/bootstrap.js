@@ -6,16 +6,19 @@ require.config({
     angularSanitize: '../../bower_components/angular-sanitize/angular-sanitize',
     angularResource: '../../bower_components/angular-resource/angular-resource',
     angularMocks: '../../bower_components/angular-mocks/angular-mocks',
-    text: '../../bower_components/requirejs-text/text'
+    text: '../../bower_components/requirejs-text/text',
+    lodash: '../../bower_components/lodash/dist/lodash'
   },
   shim: {
-    'angular' : {'exports' : 'angular'},
+    'angular': {
+      'exports': 'angular'
+    },
     'angularRoute': ['angular'],
     'angularSanitize': ['angular'],
     'angularResource': ['angular'],
     'angularMocks': {
-      deps:['angular'],
-      'exports':'angular.mock'
+      deps: ['angular'],
+      'exports': 'angular.mock'
     }
   },
   priority: [
