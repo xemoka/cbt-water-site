@@ -1,0 +1,697 @@
+[
+	{
+		"name":"Assessment Watersheds",
+		"categories": ["watersheds"],
+		"url": "",
+		"layer_id": "",
+		"feature_type": "",
+		"layer_options": {},
+		"summary": "Assessment watersheds in the Columbia Basin",
+		"description": "",
+		"source": "Selkirk Geospatial Research Centre",
+		"metadata_link":"",
+		"download_link":"",
+		"info_fields": [
+			{
+			"field": "", 
+			"alias": "",
+			"description": "" 
+			}
+		],
+		"info_custom": "",
+		"legend_icon": "",
+		"children": []
+	},{
+		"name":"Watershed Groups",
+		"categories": ["watersheds","administration"],
+		"url": "",
+		"layer_id": "",
+		"feature_type": "feature",
+		"layer_options": {},
+		"summary": "Polygons delimiting the watershed group boundary",
+		"description": "Polygons delimiting the watershed group boundary, which is a collections of drainage areas. In-land groups will contain a single polygon, coastal groups may contain multiple polygons (one for each island)",
+		"source": "Ministry of Forests, Lands and Natural Resource Operations: Freshwater Atlas",
+		"metadata_link": "https://apps.gov.bc.ca/pub/geometadata/metadataDetail.do?recordUID=50651&amp;recordSet=ISO19115",
+		"download_link":"https://apps.gov.bc.ca/pub/dwds/addProductsFromExternalApplication.do?productTypeId=0&productId=12741",
+		"license":"Open Government License - BC",
+		"license_link":"http://www.data.gov.bc.ca/local/dbc/docs/license/OGL-vbc2.0.pdf",
+		"info_fields": [
+			{
+			"field": "", 
+			"alias": "",
+			"description": "" 
+			}
+		],
+		"info_custom": "",
+		"legend_icon": "",
+		"children": []
+	},{
+		"name":"Hydrologic Zones",
+		"categories": ["watersheds"],
+		"url": "",
+		"layer_id": "",
+		"feature_type": "feature",
+		"layer_options": {},
+		"summary": "Zones that represent areas of homogeneous hydrologic and geomorphological characteristics.",
+		"description": "",
+		"source": "Ministry of Environment",
+		"metadata_link": "https://apps.gov.bc.ca/pub/geometadata/metadataDetail.do?recordUID=43231&amp;recordSet=ISO19115",
+		"download_link":"https://apps.gov.bc.ca/pub/dwds/addProductsFromExternalApplication.do?productTypeId=0&productId=2820",
+		"license":"Open Government License - BC",
+		"license_link":"http://www.data.gov.bc.ca/local/dbc/docs/license/OGL-vbc2.0.pdf",
+		"info_fields": [
+			{
+			"field": "", 
+			"alias": "",
+			"description": "" 
+			}
+		],
+		"info_custom": "",
+		"legend_icon": "",
+		"children": []
+	},{
+		"name":"Fisheries Sensitive Watersheds",
+		"categories": ["watersheds","fauna"],
+		"url": "",
+		"layer_id": "",
+		"feature_type": "feature",
+		"layer_options": {},
+		"summary": "Approved legal boundaries for fisheries sensitive watersheds.",
+		"description": "A FSW is a mapped area with specific management objectives intended to guide development activities which may adversely impact important fish values",
+		"source": "Ministry of Environment",
+		"metadata_link": "https://apps.gov.bc.ca/pub/geometadata/metadataDetail.do?recordUID=49678&recordSet=ISO19115",
+		"download_link":"https://apps.gov.bc.ca/pub/dwds/viewOrder.do?orderId=1397487",
+		"license":"Open Government License - BC",
+		"license_link":"http://www.data.gov.bc.ca/local/dbc/docs/license/OGL-vbc2.0.pdf",
+		"info_fields": [
+			{
+			"field": "", 
+			"alias": "",
+			"description": "" 
+			}
+		],
+		"info_custom": "",
+		"legend_icon": "",
+		"children": []
+	},{
+		"name":"Points of Diversion",
+		"categories": ["watersheds", "administration"],
+		"url": "",
+		"layer_id": "",
+		"feature_type": "feature_layer",
+		"layer_options": {},
+		"summary": "Water licence points of diversion joined with licence information.",
+		"description": "Province-wide SDE spatial layer displaying water licence points of diversion joined with licence information. This layer contains a record for each water licence on each Point of Diversion that exists in the province (each Point of Diversion can have multiple licences). For each record, some basic information about the water licence is included",
+		"source": "Ministry of Forests, Lands and Natural Resource Operations",
+		"metadata_link": "https://apps.gov.bc.ca/pub/geometadata/metadataDetail.do?recordUID=47674&recordSet=ISO19115",
+		"download_link":"https://apps.gov.bc.ca/pub/dwds/addProductsFromExternalApplication.do?productTypeId=0&productId=9323",
+		"license":"Open Government License - BC",
+		"license_link":"http://www.data.gov.bc.ca/local/dbc/docs/license/OGL-vbc2.0.pdf",
+		"info_fields": [
+			{
+			"field": "", 
+			"alias": "",
+			"description": "" 
+			}
+		],
+		"info_custom": "",
+		"legend_icon": "",
+		"children": []
+	},{
+		"name":"Hydro Power Points of Diversion",
+		"categories": ["watersheds","administration"],
+		"url": "",
+		"layer_id": "",
+		"feature_type": "",
+		"layer_options": {},
+		"summary": "Points of diversion for small hydro projects.",
+		"description": "This layer shows the points of diversion and licenses for small hydro projects and public-private-partnerships.",
+		"source": "Ministry of Forests, Lands and Natural Resource Operations & the Selkirk Geospatial Research Centre",
+		"metadata_link": "",
+		"download_link":"",
+		"license":"Open Government License - BC",
+		"license_link":"http://www.data.gov.bc.ca/local/dbc/docs/license/OGL-vbc2.0.pdf",
+		"info_fields": [
+			{
+			"field": "", 
+			"alias": "",
+			"description": "" 
+			}
+		],
+		"info_custom": "",
+		"legend_icon": "",
+		"children": []
+	},{
+		"name":"HydroMet Network",
+		"categories": ["watersheds","infrastructure"],
+		"url": "",
+		"layer_id": "",
+		"feature_type": "feature_layer",
+		"layer_options": {},
+		"summary": "HydroMet Monitoring Network Sensors + Data",
+		"description": "Real time data from BC Hydro's HydroMet Monitoring Network, showing current water levels and historical data for the Columbia Basin",
+		"source": "BC Hydro",
+		"metadata_link": "http://www.bchydro.com/energy-in-bc/our_system/transmission_reservoir_data/hydrometric_data/columbia.html",
+		"download_link":"",
+		"license":"",
+		"license_link":"",
+		"info_fields": [
+			{
+			"field": "", 
+			"alias": "",
+			"description": "" 
+			}
+		],
+		"info_custom": "",
+		"legend_icon": "",
+		"children": []
+	},{
+		"name":"EC Water Monitoring",
+		"categories": ["watersheds"],
+		"url": "",
+		"layer_id": "",
+		"feature_type": "feature_layer",
+		"layer_options": {},
+		"summary": "Active hydrometric stations in BC as determined by Environment Canada",
+		"description": "Hydrometric station locations and links to Environment Canada's Monitoring pages",
+		"source": "Environment Canada",
+		"metadata_link": "https://apps.gov.bc.ca/pub/geometadata/metadataDetail.do?recordUID=43931&recordSet=ISO19115",
+		"download_link": "https://apps.gov.bc.ca/pub/dwds/addProductsFromExternalApplication.do?productTypeId=0&productId=8547",
+		"license": "Open Government License - BC",
+		"license_link": "http://www.data.gov.bc.ca/local/dbc/docs/license/OGL-vbc2.0.pdf",
+		"info_fields": [
+			{
+			"field": "", 
+			"alias": "",
+			"description": "" 
+			}
+		],
+		"info_custom": "",
+		"legend_icon": "",
+		"children": []
+	},{
+		"name":"Climate Stations",
+		"categories": ["watersheds","cryosphere"],
+		"url": "",
+		"layer_id": "",
+		"feature_type": "",
+		"layer_options": {},
+		"summary": "Location of climate observation stations in British Columbia",
+		"description": "Environment Canada's Climate Observation station locations, with links to <a href='http://www.climate.weather.gc.ca/'>EC's Climate website</a> for each station",
+		"source": "Ministry of Environment",
+		"metadata_link": "https://apps.gov.bc.ca/pub/geometadata/metadataDetail.do?recordUID=7270&recordSet=ISO19115",
+		"download_link": "https://apps.gov.bc.ca/pub/dwds/addProductsFromExternalApplication.do?productTypeId=0&productId=5305",
+		"license": "Request Permission",
+		"license_link": "http://www2.gov.bc.ca/gov/admin/copyright.page",
+		"info_fields": [
+			{
+			"field": "", 
+			"alias": "",
+			"description": "" 
+			}
+		],
+		"info_custom": "",
+		"legend_icon": "",
+		"children": []
+	},{
+		"name":"Water Restrictions",
+		"categories": ["watersheds","administration"],
+		"url": "",
+		"layer_id": "",
+		"feature_type": "",
+		"layer_options": {},
+		"summary": "Streams with current or potential water allocation concerns",
+		"description": "This layer shows the most downstream point of a stream, as determined by Water Stewardship Division staff, to have a current or potential water allocation concern",
+		"source": "Ministry of Forests, Lands and Natural Resource Operations",
+		"metadata_link": "https://apps.gov.bc.ca/pub/geometadata/metadataDetail.do?recordUID=32610&recordSet=ISO19115",
+		"download_link": "https://apps.gov.bc.ca/pub/dwds/addProductsFromExternalApplication.do?productTypeId=0&productId=3244",
+		"license": "Open Government License - BC",
+		"license_link": "http://www.data.gov.bc.ca/local/dbc/docs/license/OGL-vbc2.0.pdf",
+		"info_fields": [
+			{
+			"field": "", 
+			"alias": "",
+			"description": "" 
+			}
+		],
+		"info_custom": "",
+		"legend_icon": "",
+		"children": []
+	},{
+		"name":"Groundwater Wells",
+		"categories": ["drinking_water","watersheds"],
+		"url": "",
+		"layer_id": "",
+		"feature_type": "",
+		"layer_options": {},
+		"summary": "Groundwater well locations",
+		"description": "Point features showing the location of ground water wells in BC joined with attributes and information from the WELLS database.",
+		"source": "Ministry of Environment",
+		"metadata_link": "https://apps.gov.bc.ca/pub/geometadata/metadataDetail.do?recordUID=49998&recordSet=ISO19115",
+		"download_link": "https://apps.gov.bc.ca/pub/dwds/addProductsFromExternalApplication.do?productTypeId=0&productId=9695",
+		"license": "Open Government License - BC",
+		"license_link": "http://www.data.gov.bc.ca/local/dbc/docs/license/OGL-vbc2.0.pdf",
+		"info_fields": [
+			{
+			"field": "", 
+			"alias": "",
+			"description": "" 
+			}
+		],
+		"info_custom": "",
+		"legend_icon": "",
+		"children": []
+	},{
+		"name":"Groundwater Aquifers",
+		"categories": ["drinking_water","watersheds"],
+		"url": "",
+		"layer_id": "",
+		"feature_type": "",
+		"layer_options": {},
+		"summary": "Developed groundwater aquifers",
+		"description": "Features represent developed ground water aquifers in BC (that have been mapped). Most aquifer boundaries are delineated based on geology, hydrology and topographic information. Some aquifer boundaries stop at the border of BC mapsheet boundaries due to resource or data constraints at the time of mapping.",
+		"source": "Ministry of Environment",
+		"metadata_link": "https://apps.gov.bc.ca/pub/geometadata/metadataDetail.do?recordUID=3841&recordSet=ISO19115",
+		"download_link": "https://apps.gov.bc.ca/pub/dwds/addProductsFromExternalApplication.do?productTypeId=0&productId=9692",
+		"license": "Open Government License - BC",
+		"license_link": "http://www.data.gov.bc.ca/local/dbc/docs/license/OGL-vbc2.0.pdf",
+		"info_fields": [
+			{
+			"field": "", 
+			"alias": "",
+			"description": "" 
+			}
+		],
+		"info_custom": "",
+		"legend_icon": "",
+		"children": []
+	},{
+		"name":"Community Watersheds",
+		"categories": ["drinking_water","watersheds", "administration"],
+		"url": "",
+		"layer_id": "",
+		"feature_type": "feature_layer",
+		"layer_options": {},
+		"summary": "Areas designated as community watersheds by government",
+		"description": "Boundaries of areas designated as community watershed by government - that are all or part of the drainage area that is upslope of the lowest point from which water is diverted for human consumption by a licensed waterworks",
+		"source": "Ministry of Environment",
+		"metadata_link": "https://apps.gov.bc.ca/pub/geometadata/metadataDetail.do?recordUID=56579&recordSet=ISO19115",
+		"download_link": "https://apps.gov.bc.ca/pub/dwds/addProductsFromExternalApplication.do?productTypeId=0&productId=12582",
+		"license": "Open Government License - BC",
+		"license_link": "http://www.data.gov.bc.ca/local/dbc/docs/license/OGL-vbc2.0.pdf",
+		"info_fields": [
+			{
+			"field": "", 
+			"alias": "",
+			"description": "" 
+			}
+		],
+		"info_custom": "",
+		"legend_icon": "",
+		"children": []
+	},{
+		"name":"Drinking Water Sources",
+		"categories": ["drinking_water","watersheds"],
+		"url": "",
+		"layer_id": "",
+		"feature_type": "feature_layer",
+		"layer_options": {},
+		"summary": "Points of Diversion for Drinking Water",
+		"description": "Consumptive water license points of diversion for drinking water systems. A drinking water system is one where two or more water licenses for domestic purposes exist at a single POD, and/or has a water license for the purpose of supplying drinking water for human consumption",
+		"source": "Ministry of Forests, Lands and Natural Resource Operations",
+		"metadata_link": "http://apps.gov.bc.ca/pub/geometadata/metadataDetail.do?recordUID=58962&recordSet=ISO19115",
+		"download_link": "https://apps.gov.bc.ca/pub/dwds/addProductsFromExternalApplication.do?productTypeId=0&productId=13962",
+		"license": "Open Government License - BC",
+		"license_link": "http://www.data.gov.bc.ca/local/dbc/docs/license/OGL-vbc2.0.pdf",
+		"info_fields": [
+			{
+			"field": "", 
+			"alias": "",
+			"description": "" 
+			}
+		],
+		"info_custom": "",
+		"legend_icon": "",
+		"children": []
+	},{
+		"name":"Waterworks Infrastructure",
+		"categories": ["drinking_water","projects","KYW"],
+		"url": "",
+		"layer_id": "",
+		"feature_type": "feature_layer",
+		"layer_options": {},
+		"summary": "Waterworks Infrastructure from the KYW Project",
+		"description": "Waterworks infrastructure locations as collected for the Know Your Watershed Project",
+		"source": "Know Your Watershed, Selkirk Geospatial Research Centre, Columbia Basin Trust",
+		"metadata_link": "",
+		"download_link": "",
+		"license": "",
+		"license_link": "",
+		"info_fields": [
+			{
+			"field": "", 
+			"alias": "",
+			"description": "" 
+			}
+		],
+		"info_custom": "",
+		"legend_icon": "",
+		"children": []
+	},{
+		"name":"Riparian Zones",
+		"categories": ["riparian", "ecosystems"],
+		"url": "",
+		"layer_id": "",
+		"feature_type": "",
+		"layer_options": {},
+		"summary": "Riparian zone classification",
+		"description": "This layer shows the riparian areas within the Columbia Basin, generally 3 bankfull widths of the stream on either side.",
+		"source": "Ministry of Forest, Lands and Natural Resource Operations, Selkirk Geospatial Research Centre",
+		"metadata_link": "",
+		"download_link": "",
+		"license": "",
+		"license_link": "",
+		"info_fields": [
+			{
+			"field": "", 
+			"alias": "",
+			"description": "" 
+			}
+		],
+		"info_custom": "",
+		"legend_icon": "",
+		"children": []
+	},{
+		"name":"Floodplains",
+		"categories": ["riparian"],
+		"url": "",
+		"layer_id": "",
+		"feature_type": "",
+		"layer_options": {},
+		"summary": "Historical floodplans",
+		"description": "Historical floodplain boundaries in BC with a descriptive feature name for each floodplain area (i.e., 200-year floodplain, alluvial fan, or nothing/out-of-floodplain). Digitized from hardcopy 1:5,000 Floodplain Mapsheets for each project area",
+		"source": "Ministry of Environment",
+		"metadata_link": "https://apps.gov.bc.ca/pub/geometadata/metadataDetail.do?recordUID=42651&recordSet=ISO19115",
+		"download_link": "https://apps.gov.bc.ca/pub/dwds/addProductsFromExternalApplication.do?productTypeId=0&productId=5070",
+		"license": "Open Government License - BC",
+		"license_link": "http://www.data.gov.bc.ca/local/dbc/docs/license/OGL-vbc2.0.pdf",
+		"info_fields": [
+			{
+			"field": "", 
+			"alias": "",
+			"description": "" 
+			}
+		],
+		"info_custom": "",
+		"legend_icon": "",
+		"children": []
+	},{
+		"name":"Slocan River Riparian Area",
+		"categories": ["riparian","ecosystems"],
+		"url": "",
+		"layer_id": "",
+		"feature_type": "",
+		"layer_options": {},
+		"summary": "Classified riparian area along the Slocan River",
+		"description": "This data is the result of the Slocan Valley Sensitive Ecosystems Inventory completed by Ryan Durand (RPBio) and Taara Environmental with assistance from the Selkirk Geospatial Research Centre for the Slocan River Streamkeepers. See the metadata for the entire report",
+		"source": "Taara Environmental, Selkirk Geospatial Research Centre",
+		"metadata_link": "http://biodiversityatlas.org/reports/details.php?reportID=570&searchterms=Slocan%20River",
+		"download_link": "",
+		"license": "",
+		"license_link": "",
+		"info_fields": [
+			{
+			"field": "", 
+			"alias": "",
+			"description": "" 
+			}
+		],
+		"info_custom": "",
+		"legend_icon": "",
+		"children": []
+	},{
+		"name":"Glaciers (2005)",
+		"categories": ["cryosphere"],
+		"url": "",
+		"layer_id": "",
+		"feature_type": "feature_layer",
+		"layer_options": {},
+		"summary": "Glaciers in the Columbia Basin",
+		"description": "This layer shows the extent of glaciers in the region as of 2005 (median date). Glacier outlines were confirmed using remote sensing.",
+		"source": "R. Wheate, UNBC. See Bolch, T., Menounos, B., and Wheate, R. (2010). Landsat-based inventory of glaciers in western Canada, 1985-2005. Remote Sensing of Environment, 114, 127-137.",
+		"metadata_link": "",
+		"download_link": "",
+		"license": "",
+		"license_link": "",
+		"info_fields": [
+			{
+			"field": "", 
+			"alias": "",
+			"description": "" 
+			}
+		],
+		"info_custom": "",
+		"legend_icon": "",
+		"children": []
+	},{
+		"name":"Glacier Monitoring Stations",
+		"categories": ["cryosphere"],
+		"url": "",
+		"layer_id": "",
+		"feature_type": "feature_layer",
+		"layer_options": {},
+		"summary": "Glacier mass balance monitoring sites",
+		"description": "Sites established to monitor glaciers in the Columbia Basin",
+		"source": "Selkirk Geospatial Research Centre & Contributors",
+		"metadata_link": "",
+		"download_link": "",
+		"license": "",
+		"license_link": "",
+		"info_fields": [
+			{
+			"field": "", 
+			"alias": "",
+			"description": "" 
+			}
+		],
+		"info_custom": "",
+		"legend_icon": "",
+		"children": []
+	},{
+		"name":"Snow Pillow Stations",
+		"categories": ["cryosphere"],
+		"url": "",
+		"layer_id": "",
+		"feature_type": "feature_layer",
+		"layer_options": {},
+		"summary": "Active snow pillow locations",
+		"description": "Active snow pillows within the Columbia Basin, used to for monitoring snow pack",
+		"source": "Ministry of Environment",
+		"metadata_link": "https://apps.gov.bc.ca/pub/geometadata/metadataDetail.do?recordUID=32670&recordSet=ISO19115",
+		"download_link": "https://apps.gov.bc.ca/pub/dwds/addProductsFromExternalApplication.do?productTypeId=0&productId=3161",
+		"license": "Open Government License - BC",
+		"license_link": "http://www.data.gov.bc.ca/local/dbc/docs/license/OGL-vbc2.0.pdf",
+		"info_fields": [
+			{
+			"field": "", 
+			"alias": "",
+			"description": "" 
+			}
+		],
+		"info_custom": "",
+		"legend_icon": "",
+		"children": []
+	},{
+		"name":"Snow Course Locations",
+		"categories": ["cryosphere"],
+		"url": "",
+		"layer_id": "",
+		"feature_type": "feature_layer",
+		"layer_options": {},
+		"summary": "Active snow course monitoring locations",
+		"description": "Manual snow courses actively surveyed as part of the BC Snow Survey program",
+		"source": "Ministry of Environment",
+		"metadata_link": "https://apps.gov.bc.ca/pub/geometadata/metadataDetail.do?recordUID=32650&recordSet=ISO19115",
+		"download_link": "https://apps.gov.bc.ca/pub/dwds/addProductsFromExternalApplication.do?productTypeId=0&productId=3163",
+		"license": "Open Government License - BC",
+		"license_link": "http://www.data.gov.bc.ca/local/dbc/docs/license/OGL-vbc2.0.pdf",
+		"info_fields": [
+			{
+			"field": "", 
+			"alias": "",
+			"description": "" 
+			}
+		],
+		"info_custom": "",
+		"legend_icon": "",
+		"children": []
+	},{
+		"name":"Historical Fish Distribution",
+		"categories": ["fauna"],
+		"url": "",
+		"layer_id": "",
+		"feature_type": "",
+		"layer_options": {},
+		"summary": "Fish species distribution",
+		"description": "This layer shows inland waters fish species distribution, mapped as stream segments or zones. This layer is based on data from the Fisheries Information Summary System (FISS) database that was compiled prior to the year 2000. Each zone represents a section or length of stream where a fish species has been identified and, where known, the extent of its spawning, rearing and holding activities.",
+		"source": "Ministry of Environment",
+		"metadata_link": "https://apps.gov.bc.ca/pub/geometadata/metadataDetail.do?recordUID=47234&recordSet=ISO19115",
+		"download_link": "https://apps.gov.bc.ca/pub/dwds/addProductsFromExternalApplication.do?productTypeId=0&productId=8963",
+		"license": "Open Government License - BC",
+		"license_link": "http://www.data.gov.bc.ca/local/dbc/docs/license/OGL-vbc2.0.pdf",
+		"info_fields": [
+			{
+			"field": "", 
+			"alias": "",
+			"description": "" 
+			}
+		],
+		"info_custom": "",
+		"legend_icon": "",
+		"children": []
+	},{
+		"name":"Invasive Plant Sites",
+		"categories": ["flora"],
+		"url": "",
+		"layer_id": "",
+		"feature_type": "",
+		"layer_options": {},
+		"summary": "Identified invasive plant sites in the Columbia Basin",
+		"description": "This layer is from the Biodiversity Atlas",
+		"source": "???",
+		"metadata_link": "",
+		"download_link": "",
+		"license": "",
+		"license_link": "",
+		"info_fields": [
+			{
+			"field": "", 
+			"alias": "",
+			"description": "" 
+			}
+		],
+		"info_custom": "",
+		"legend_icon": "",
+		"children": []
+	},{
+		"name":"Forest Vegetation (VRI)",
+		"categories": ["ecosystems","flora"],
+		"url": "",
+		"layer_id": "",
+		"feature_type": "",
+		"layer_options": {},
+		"summary": "Forest Vegetation Composition",
+		"description": "Forest inventory dataset updated with depletions (harvesting), projected annual growth, species classification and other forestry related attributes.",
+		"source": "Ministry of Forests, Lands and Natural Resource Operations",
+		"metadata_link": "https://apps.gov.bc.ca/pub/geometadata/metadataDetail.do?recordUID=47574&recordSet=ISO19115",
+		"download_link": "https://apps.gov.bc.ca/pub/dwds/addProductsFromExternalApplication.do?productTypeId=0&productId=9320",
+		"license": "Open Government License - BC",
+		"license_link": "http://www.data.gov.bc.ca/local/dbc/docs/license/OGL-vbc2.0.pdf",
+		"info_fields": [
+			{
+			"field": "", 
+			"alias": "",
+			"description": "" 
+			}
+		],
+		"info_custom": "",
+		"legend_icon": "",
+		"children": []
+	},{
+		"name":"BEC Zones",
+		"categories": ["ecosystems", "flora"],
+		"url": "",
+		"layer_id": "",
+		"feature_type": "",
+		"layer_options": {},
+		"summary": "Biogeoclimatic Ecosystem Classification",
+		"description": "The current and most detailed version of the approved corporate provincial digital Biogeoclimatic Ecosystem Classification (BEC) Zone/Subzone/Variant/Phase map (version 8, February, 2012).",
+		"source": "Ministry of Forests, Lands and Natural Resource Operations",
+		"metadata_link": "https://apps.gov.bc.ca/pub/geometadata/metadataDetail.do?recordUID=51819&recordSet=ISO19115",
+		"download_link": "https://apps.gov.bc.ca/pub/dwds/addProductsFromExternalApplication.do?productTypeId=0&productId=10004",
+		"license": "Open Government License - BC",
+		"license_link": "http://www.data.gov.bc.ca/local/dbc/docs/license/OGL-vbc2.0.pdf",
+		"info_fields": [
+			{
+			"field": "", 
+			"alias": "",
+			"description": "" 
+			}
+		],
+		"info_custom": "",
+		"legend_icon": "",
+		"children": []
+	},{
+		"name":"CB Dams",
+		"categories": ["infrastructure"],
+		"url": "",
+		"layer_id": "",
+		"feature_type": "feature_layer",
+		"layer_options": {},
+		"summary": "Dams of the BC portion of the Columbia Basin",
+		"description": "Dams and their power capacity for the BC Columbia Basin Region",
+		"source": "Selkirk Geospatial Research Centre, CBT, various resources",
+		"metadata_link": "",
+		"download_link": "",
+		"license": "",
+		"license_link": "",
+		"info_fields": [
+			{
+			"field": "", 
+			"alias": "",
+			"description": "" 
+			}
+		],
+		"info_custom": "",
+		"legend_icon": "",
+		"children": []
+	},{
+		"name":"Impacted Ecosystems",
+		"categories": ["infrastructure","ecosystems"],
+		"url": "",
+		"layer_id": "",
+		"feature_type": "feature_layer",
+		"layer_options": {},
+		"summary": "Dam impacted ecosystems",
+		"description": "This layer shows the dam impacted ecosystems in the Columbia Basin.",
+		"source": "Selkirk Geospatial Research Centre",
+		"metadata_link": "",
+		"download_link": "",
+		"license": "",
+		"license_link": "",
+		"info_fields": [
+			{
+			"field": "", 
+			"alias": "",
+			"description": "" 
+			}
+		],
+		"info_custom": "",
+		"legend_icon": "",
+		"children": []
+	},{
+		"name":"Impacted Communities",
+		"categories": ["infrastructure"],
+		"url": "",
+		"layer_id": "",
+		"feature_type": "feature_layer",
+		"layer_options": {},
+		"summary": "Dam impacted communities",
+		"description": "This layer shows communities that were impacted by the damming of the Columbia and Kootenay rivers in the Columbia Basin.",
+		"source": "Selkirk Geospatial Research Centre",
+		"metadata_link": "",
+		"download_link": "",
+		"license": "",
+		"license_link": "",
+		"info_fields": [
+			{
+			"field": "", 
+			"alias": "",
+			"description": "" 
+			}
+		],
+		"info_custom": "",
+		"legend_icon": "",
+		"children": []
+	}
+]

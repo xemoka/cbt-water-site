@@ -74,11 +74,18 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
         .legend {
             float: right;
             position: relative;
+            overflow-y: scroll;
+            overflow-x: none;
             top: 15px;
             right: 0px;
             height: 450px;
             width: 250px;
             background-color: lightgrey;
+
+            h3 {
+                font-size: 2rem;
+                margin-top: 0px;
+            }
         }
 
     }
