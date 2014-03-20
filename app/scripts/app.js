@@ -1,9 +1,10 @@
 /*jshint unused: vars */
 
-define(['angular', 'controllers/main']/*deps*/, function (angular, MainController)/*invoke*/ {
+define(['angular', 'controllers/main', 'controllers/legend']/*deps*/, function (angular, MainCtrl, LegendCtrl)/*invoke*/ {
   'use strict';
 
-  return angular.module('cbtWaterSiteApp', ['cbtWaterSiteApp.controllers.MainController',
+  return angular.module('cbtWaterSiteApp', ['cbtWaterSiteApp.controllers.MainCtrl',
+'cbtWaterSiteApp.controllers.LegendCtrl',
 /*angJSDeps*/
   'ngResource',
   'ngSanitize',
@@ -13,7 +14,7 @@ define(['angular', 'controllers/main']/*deps*/, function (angular, MainControlle
       $routeProvider
         .when('/', {
           templateUrl: 'views/main.html',
-          controller: 'MainController'
+          controller: 'MainCtrl'
         })
         .otherwise({
           redirectTo: '/'
