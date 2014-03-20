@@ -57,6 +57,14 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
         width: 100%;
         background-color: darkgrey;
         color: white;
+
+        .left{
+            float: left;
+        }
+
+        .right{
+            float: right;
+        }
     }
 
     /* Content */
@@ -99,4 +107,10 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
         min-width: 450px;
         height: 200px;
         background-color: lightgrey;
+        padding: 15px;
+        overflow-y: scroll;
+
+        h3 {
+            margin-top: 0px;
+        }
     }

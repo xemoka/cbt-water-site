@@ -1,6 +1,10 @@
 <header>
   <h1>Columbia Basin Water Information</h1>
-  <nav>Navigation Bar</nav>
+  <nav ng-controller="NavCtrl">
+    <ul>
+      <li ng-repeat='category in categories.list'>{{category}}</li>
+    </ul>
+  </nav>
 </header>
 <div class="map">
   Map Area
@@ -13,9 +17,11 @@
     </ul>
   </div>
 </div>
-<div class="info">
-  Info Box
+<div class="info" ng-controller="InfoCtrl">
+  <h3>Info Box</h3>
+  {{layerInfo}}
 </div>
 <footer>
-  Footer?
+  <span class='left'>with support from the Columbia Basin Trust</span>
+  <span class='right'>SGRC 2014</span>
 </footer>
