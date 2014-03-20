@@ -1,9 +1,9 @@
 /*jshint unused: vars */
 
-define(['angular', 'controllers/main']/*deps*/, function (angular, MainCtrl)/*invoke*/ {
+define(['angular', 'controllers/main']/*deps*/, function (angular, MainController)/*invoke*/ {
   'use strict';
 
-  return angular.module('cbtWaterSiteApp', ['cbtWaterSiteApp.controllers.MainCtrl',
+  return angular.module('cbtWaterSiteApp', ['cbtWaterSiteApp.controllers.MainController',
 /*angJSDeps*/
   'ngResource',
   'ngSanitize',
