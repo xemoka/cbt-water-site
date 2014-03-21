@@ -7,9 +7,10 @@ define(['angular'], function(angular) {
       var selected = {};
       return {
         getLayers: function() {
-          return $http.get('data/layers.json').then(function(data) {
-            return data.data;
+          var layers = $http.get('data/layers.json').then(function(response) {
+            return response.data;
           });
+          return layers;
         },
         getSelected: function() {
           return selected.current;
