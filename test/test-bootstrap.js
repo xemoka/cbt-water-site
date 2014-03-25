@@ -1,11 +1,11 @@
 var tests = [];
 for (var file in window.__karma__.files) {
-  if (window.__karma__.files.hasOwnProperty(file)) {
-    // Removed "Spec" naming from files
-    if (/Spec\.js$/.test(file)) {
-      tests.push(file);
+    if (window.__karma__.files.hasOwnProperty(file)) {
+        // Removed "Spec" naming from files
+        if (/Spec\.js$/.test(file)) {
+            tests.push(file);
+        }
     }
-  }
 }
 
 requirejs.config({
@@ -18,16 +18,22 @@ requirejs.config({
         angularSanitize: '../bower_components/angular-sanitize/angular-sanitize',
         angularResource: '../bower_components/angular-resource/angular-resource',
         angularMocks: '../bower_components/angular-mocks/angular-mocks',
+        lodash: '../bower_components/lodash/dist/lodash',
     },
 
     shim: {
-        'angular' : {'exports' : 'angular'},
+        "lodash": {
+            exports: '_'
+        },
+        'angular': {
+            'exports': 'angular'
+        },
         'angularRoute': ['angular'],
         'angularSanitize': ['angular'],
         'angularResource': ['angular'],
         'angularMocks': {
-          deps:['angular'],
-          'exports':'angular.mock'
+            deps: ['angular'],
+            'exports': 'angular.mock'
         }
     },
 
