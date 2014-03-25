@@ -17,6 +17,10 @@ define(['angular', 'controllers/main', 'controllers/legend', 'services/layers', 
   ])
     .config(function($routeProvider) {
       $routeProvider
+        .when('/:category', {
+          templateUrl: 'views/main.html',
+          controller: 'MainCtrl'
+        })
         .when('/', {
           templateUrl: 'views/main.html',
           controller: 'MainCtrl'

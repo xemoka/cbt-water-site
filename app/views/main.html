@@ -1,15 +1,6 @@
-<header>
-  <h1>Columbia Basin Water Information</h1>
-  <nav ng-controller="NavCtrl">
-    <ul>
-      <li ng-repeat='category in categories.list | orderBy:"toString()"'><a href='#/{{category}}'>{{category | titleCase}}</a></li>
-    </ul>
-  </nav>
-</header>
-
 <div class="map">
   Map Area
-  <div class="legend" ng-controller="LegendCtrl">
+  <div class="legend" ng-controller="LegendCtrl" ng-cloak>
     <h3>Legend Div</h3>
     <ul>
       <li ng-repeat="layer in layers | orderBy:'name.toString()'">

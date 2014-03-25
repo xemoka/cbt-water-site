@@ -24,6 +24,16 @@
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
+    <header>
+      <h1>Columbia Basin Water Information</h1>
+      <nav ng-controller="NavCtrl" ng-cloak>
+        <ul>
+          <li ng-class="{active : isActive('/')}"><a href='#'>+</a></li>
+          <li ng-class="{active : isActive('/{{category}}')}" ng-repeat="category in categories.list | orderBy:'toString()'"><a href='#/{{category}}'>{{category | titleCase}}</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <div class="container" ng-view></div>
 
     <footer>
