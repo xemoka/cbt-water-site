@@ -7,6 +7,12 @@ $color2: #62E200;
 $color3: #E60042;
 $color4: #FF9000;
 
+@mixin dropshadow($horiz, $vert, $blur, $spread ) {
+  -moz-box-shadow: $horiz $vert $blur $spread, $horiz+1 $vert+1 $blur $spread, $horiz+2 $vert+2 $blur $spread, $horiz+3 $vert+3 $blur $spread, $horiz+4 $vert+4 $blur $spread, $horiz+5 $vert+5 $blur $spread, $horiz+6 $vert+6 $blur $spread;
+  -webkit-box-shadow: $horiz $vert $blur $spread, $horiz+1 $vert+1 $blur $spread, $horiz+2 $vert+2 $blur $spread, $horiz+3 $vert+3 $blur $spread, $horiz+4 $vert+4 $blur $spread, $horiz+5 $vert+5 $blur $spread, $horiz+6 $vert+6 $blur $spread;
+  box-shadow: $horiz $vert $blur $spread, $horiz+1 $vert+1 $blur $spread, $horiz+2 $vert+2 $blur $spread, $horiz+3 $vert+3 $blur $spread, $horiz+4 $vert+4 $blur $spread, $horiz+5 $vert+5 $blur $spread, $horiz+6 $vert+6 $blur $spread;
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -52,7 +58,7 @@ $color4: #FF9000;
 
     nav {
       display: block;
-      position: absolute;
+      // position: absolute;
       bottom: 0px;
       margin-top: 5px;
       vertical-align: bottom;
@@ -67,7 +73,8 @@ $color4: #FF9000;
           display: inline-block;
           padding-right: 7.5px;
           padding-left: 7.5px;
-          margin-right: 3px;
+          padding-bottom: 2px;
+          margin-right: 5px;
           font-size: 1.2em;
           text-align: center;
 
@@ -76,20 +83,27 @@ $color4: #FF9000;
           a:hover {
             color: white;
           }
+
+          @include dropshadow (1px, 1px, 0px, 0px);
+
         }
 
+        .active { 
+          top: 2px; 
+          left: 2px;
+        }
 
-        li:nth-child(4n+1) { background-color: darken($color1,5%); }
-        li:nth-child(4n+1).active { background-color: lighten($color1,35%); } 
+        li:nth-child(4n+1) { background-color: darken($color1,5%); color: darken($color1, 20%); }
+        li:nth-child(4n+1).active { background-color: lighten($color1,35%); color: lighten($color1, 5%);} 
 
-        li:nth-child(4n+2) { background-color: darken($color2,10%); }
-        li:nth-child(4n+2).active { background-color: saturate($color2,15%); }
+        li:nth-child(4n+2) { background-color: darken($color2,10%); color: darken($color2, 20%); }
+        li:nth-child(4n+2).active { background-color: saturate($color2,15%); color: darken($color2, 10%); }
 
-        li:nth-child(4n+3) { background-color: darken($color3,5%); }
-        li:nth-child(4n+3).active { background-color: lighten($color3,25%); }
+        li:nth-child(4n+3) { background-color: darken($color3,5%); color: darken($color3, 20%); }
+        li:nth-child(4n+3).active { background-color: lighten($color3,25%); color: darken($color3, 5%);}
 
-        li:nth-child(4n+4) { background-color: darken($color4,5%); }
-        li:nth-child(4n+4).active { background-color: lighten($color4,15%); }
+        li:nth-child(4n+4) { background-color: darken($color4,5%); color: darken($color4, 20%); }
+        li:nth-child(4n+4).active { background-color: lighten($color4,15%); color: darken($color4, 10%);}
       }
 
     }
