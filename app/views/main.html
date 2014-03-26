@@ -1,6 +1,6 @@
 <div class="map">
   Map Area
-  <div class="legend" ng-controller="LegendCtrl" ng-cloak>
+  <div class="legend" ng-controller="LegendCtrl">
     <!-- <h3>Legend</h3> -->
     <div class="legend-container">
       <ul>
@@ -15,4 +15,5 @@
 <div class="info" ng-controller="InfoCtrl" ng-show="selected.name" ng-cloak>
   <h3>Layer: {{selected.name}}</h3>
   <div ng-bind-html="selected.description"></div>
+  <a ng-click="clearSelected()" class="info-close"><i class="fa fa-times-circle"></i></a>
 </div>

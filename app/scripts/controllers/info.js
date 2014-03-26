@@ -12,5 +12,8 @@ define(['angular'], function(angular) {
 						$scope.selected = newVal;
 					}
 				});
+			$scope.clearSelected = function() {
+				$scope.selected = null;
+			};
 		});
 });
