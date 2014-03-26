@@ -1,14 +1,15 @@
 <div class="map">
-  Map Area
-  <div class="legend" ng-controller="LegendCtrl">
-    <!-- <h3>Legend</h3> -->
-    <div class="legend-container">
-      <ul>
-        <li ng-repeat="layer in layers | orderBy:'name.toString()'">
-          <a ng-click="selectLayer(layer)">{{layer.name}}</a>
-        </li>
-      </ul>
-    </div>
+  Map
+</div>
+
+<div class="legend" ng-controller="LegendCtrl">
+  <!-- <h3>Legend</h3> -->
+  <div class="legend-container">
+    <ul>
+      <li ng-repeat="layer in layers | orderBy:'name.toString()'">
+        <a ng-click="selectLayer(layer)">{{layer.name}}</a>
+      </li>
+    </ul>
   </div>
 </div>
 

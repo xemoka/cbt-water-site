@@ -168,46 +168,50 @@ $color4: #FF9000;
     left: 0;
     
     background-color: grey;
-  
-    .legend {
-      float: right;
-      position: relative;
-      padding: 15px 0 15px 15px;
-      // overflow-y: auto;
-      overflow-x: none;
-      top: 15px;
-      right: 0px;
-      max-height: 450px;
-      width: 250px;
-      background-color: white;
 
-      @include dropshadow(1px,1px,0px,0px);
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+  }
 
-      .legend-container {
-        overflow-y: auto;
-        max-height: 450px - 30px;
-      }
+  .legend {
+    float: right;
+    position: relative;
+    padding: 15px 0 15px 15px;
+    // overflow-y: auto;
+    overflow-x: none;
+    top: 15px;
+    right: 0px;
+    max-height: 450px;
+    width: 250px;
+    background-color: white;
 
-      h3 {
-        font-size: 2rem;
-        margin-top: 0px;
-      }
+    @include dropshadow(1px,1px,0px,0px);
 
-      ul {
-        padding-left: 0px;
-        margin-bottom: 0px;
-
-        li {
-          display: block;
-        }
-
-        a {
-          cursor: pointer;
-          color: black;
-        }
-      }
+    .legend-container {
+      overflow-y: auto;
+      max-height: 450px - 30px;
     }
 
+    h3 {
+      font-size: 2rem;
+      margin-top: 0px;
+    }
+
+    ul {
+      padding-left: 0px;
+      margin-bottom: 0px;
+
+      li {
+        display: block;
+      }
+
+      a {
+        cursor: pointer;
+        color: black;
+      }
+    }
   }
 
   .info {
