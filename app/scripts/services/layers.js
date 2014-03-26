@@ -12,12 +12,7 @@ define(['angular'], function(angular) {
           });
           return layers;
         },
-        getSelected: function() {
-          return selected.current;
-        },
-        setSelected: function(layer) {
-          selected.current = layer;
-        }
+        selected: selected
       };
     });
 });

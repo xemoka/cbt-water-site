@@ -3,8 +3,8 @@ define(['angular', 'lodash'], function(angular, _) {
 
   angular.module('cbtWaterSiteApp.controllers.LegendCtrl', [])
     .controller('LegendCtrl', function($scope, Layers, $routeParams) {
-      Layers.getLayers().then(function(data) {
 
+      Layers.getLayers().then(function(data) {
         if ($routeParams.category) {
           // filter data by category
           data = _.filter(data, function(item) {
@@ -13,5 +13,9 @@ define(['angular', 'lodash'], function(angular, _) {
         }
         $scope.layers = data;
       });
+
+      $scope.selectLayer = function(item) {
+        Layers.selected = item;
+      };
     });
 });

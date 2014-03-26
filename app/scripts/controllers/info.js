@@ -3,7 +3,14 @@ define(['angular'], function(angular) {
 
 	angular.module('cbtWaterSiteApp.controllers.InfoCtrl', [])
 		.controller('InfoCtrl', function($scope, Layers) {
-			$scope.selected = {};
-			$scope.selected.layerInfo = 'Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info, Lorem Ipsum Layer Info,';
+			$scope.selected = Layers.selected;
+			$scope.$watch(function() {
+					return Layers.selected;
+				},
+				function(newVal, oldVal) {
+					if (newVal && newVal !== oldVal) {
+						$scope.selected = newVal;
+					}
+				});
 		});
 });
