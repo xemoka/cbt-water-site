@@ -19,22 +19,22 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
-  <body ng-app="cbtWaterSiteApp">
+  <body ng-app="cbtWaterSiteApp" class='container'>
     <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <header>
       <h1>Columbia Basin Water Information</h1>
-      <nav ng-controller="NavCtrl" ng-cloak>
-        <ul>
+      <nav ng-controller="NavCtrl">
+        <ul ng-cloak>
           <li ng-class="{active : isActive('/')}"><a href='#'>+</a></li>
           <li ng-class="{active : isActive('/{{category}}')}" ng-repeat="category in categories.list | orderBy:'toString()'"><a href='#/{{category}}'>{{category | titleCase}}</a></li>
         </ul>
       </nav>
     </header>
 
-    <div class="container" ng-view></div>
+    <div ng-view></div>
 
     <footer>
       <span class='left'>SGRC 2014</span>

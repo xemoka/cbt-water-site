@@ -1,16 +1,18 @@
 <div class="map">
   Map Area
   <div class="legend" ng-controller="LegendCtrl" ng-cloak>
-    <h3>Legend Div</h3>
-    <ul>
-      <li ng-repeat="layer in layers | orderBy:'name.toString()'">
-        {{layer.name}}
-      </li>
-    </ul>
+    <!-- <h3>Legend</h3> -->
+    <div class="legend-container">
+      <ul>
+        <li ng-repeat="layer in layers | orderBy:'name.toString()'">
+          <a ng-click="selectLayer(layer)">{{layer.name}}</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
 
-<div class="info" ng-controller="InfoCtrl">
-  <h3>Info Box</h3>
-  {{selected.layerInfo}}
+<div class="info" ng-controller="InfoCtrl" ng-show="selected.name" ng-cloak>
+  <h3>Layer: {{selected.name}}</h3>
+  <div ng-bind-html="selected.description"></div>
 </div>
