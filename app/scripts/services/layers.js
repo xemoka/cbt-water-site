@@ -5,6 +5,7 @@ define(['angular'], function(angular) {
     .factory('Layers', function Layers($http) {
       // AngularJS will instantiate a singleton by calling "new" on this function
       var selected = {};
+      var enabledLayers = [];
       return {
         getLayers: function() {
           var layers = $http.get('data/layers.json').then(function(response) {
@@ -12,7 +13,8 @@ define(['angular'], function(angular) {
           });
           return layers;
         },
-        selected: selected
+        selected: selected,
+        enabledLayers: enabledLayers,
       };
     });
 });

@@ -1,13 +1,13 @@
 <div class="map">
-  Map
+  
 </div>
 
-<div class="legend" ng-controller="LegendCtrl">
+<div class="legend" ng-controller="LegendCtrl" ng-cloak>
   <!-- <h3>Legend</h3> -->
   <div class="legend-container">
     <ul>
-      <li ng-repeat="layer in layers | orderBy:'name.toString()'">
-        <a ng-click="selectLayer(layer)">{{layer.name}}</a>
+      <li ng-repeat="layer in layers | orderBy:'name.toString()' | filter:{categories:routefilter}">
+        <input type="checkbox" value="{{layer.name}}" ng-click="toggleLayer(layer)" ng-checked="checkboxStatus(layer)"><a ng-click="selectLayer(layer)">{{layer.name}}</a>
       </li>
     </ul>
   </div>
