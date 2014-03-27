@@ -7,7 +7,7 @@
 // use this if you want to recursively match all subfolders:
 // 'test/spec/**/*.js'
 
-module.exports = function (grunt) {
+module.exports = function(grunt) {
 
   // Load grunt tasks automatically
   require('load-grunt-tasks')(grunt);
@@ -64,7 +64,7 @@ module.exports = function (grunt) {
         // Change this to '0.0.0.0' to access the server from outside.
         hostname: 'localhost',
         // livereload: 35729
-        livereload: 55874
+        livereload: 56566
       },
       livereload: {
         options: {
@@ -363,13 +363,15 @@ module.exports = function (grunt) {
             text: '../bower_components/requirejs-text/text'
           },
           shim: {
-            'angular' : {'exports' : 'angular'},
+            'angular': {
+              'exports': 'angular'
+            },
             'angularRoute': ['angular'],
             'angularSanitize': ['angular'],
             'angularResource': ['angular'],
             'angularMocks': {
-              deps:['angular'],
-              'exports':'angular.mock'
+              deps: ['angular'],
+              'exports': 'angular.mock'
             }
           },
           optimize: 'uglify2',
@@ -385,7 +387,7 @@ module.exports = function (grunt) {
   });
 
 
-  grunt.registerTask('serve', function (target) {
+  grunt.registerTask('serve', function(target) {
     if (target === 'dist') {
       return grunt.task.run(['build', 'connect:dist:keepalive']);
     }
@@ -400,7 +402,7 @@ module.exports = function (grunt) {
     ]);
   });
 
-  grunt.registerTask('server', function (target) {
+  grunt.registerTask('server', function(target) {
     grunt.log.warn('The `server` task has been deprecated. Use `grunt serve` to start a server.');
     grunt.task.run(['serve:' + target]);
   });
